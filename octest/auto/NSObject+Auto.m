@@ -91,7 +91,13 @@
     ;
 }
 
-
++ (BOOL)isType:(NSString *)type key:(NSString *)key{
+    
+    if ([key hasPrefix:@"au"]) {
+        return  YES;
+    }
+    return NO;
+}
 
 
 @end

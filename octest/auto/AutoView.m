@@ -54,13 +54,7 @@
     }
     return [super resolveInstanceMethod:sel];
 }
-+ (BOOL)isType:(NSString *)type key:(NSString *)key{
-    
-    if ([key hasSuffix:@"View"]) {
-        return  YES;
-    }
-    return NO;
-}
+
 
 + (void)initialize
 {

@@ -7,7 +7,7 @@
 
 #import "TextView.h"
 @interface TextView ()
-@property(nonatomic,strong)UILabel *labelView;
+@property(nonatomic,strong)UILabel *au_label;
 
 @end
 @implementation TextView
@@ -16,9 +16,9 @@
     self = [super initWithFrame:frame];
     if (self) {
         
-        self.labelView.text = @"sdf";
-        self.labelView.frame = CGRectMake(0, 0, 100, 30);
-        self.labelView.textColor = [UIColor blackColor];
+        self.au_label.text = @"sdf";
+        self.au_label.frame = CGRectMake(0, 0, 100, 30);
+        self.au_label.textColor = [UIColor blackColor];
         
     }
     return self;

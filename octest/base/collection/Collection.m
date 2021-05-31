@@ -18,6 +18,19 @@
     self.w_array = array;
     [self reloadData];
 }
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
+    layout.itemSize = CGSizeZero;
+    layout.minimumLineSpacing = 0;
+    layout.minimumInteritemSpacing = 0;
+    layout.scrollDirection = UICollectionViewScrollDirectionVertical;
+    self = [super initWithFrame:frame collectionViewLayout:layout];
+    if (self) {
+        
+    }
+    return self;
+}
 - (instancetype)initWithFrame:(CGRect)frame collectionViewLayout:(UICollectionViewLayout *)layout{
     if(self = [super initWithFrame:frame collectionViewLayout:layout]){
         
@@ -82,5 +95,11 @@
         layout.itemSize = size;
     }
 }
-
+- (void)scrollDirection:(UICollectionViewScrollDirection)direction{
+    
+    if ([self.collectionViewLayout isKindOfClass:[UICollectionViewFlowLayout class]]) {
+        UICollectionViewFlowLayout *layout = (UICollectionViewFlowLayout *)self.collectionViewLayout;
+        layout.scrollDirection = direction;
+    }
+}
 @end

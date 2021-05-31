@@ -16,6 +16,9 @@
 #import "TextView.h"
 
 @interface MainVC ()
+@property(nonatomic,strong)UILabel *au_label;
+@property(nonatomic,strong)UILabel *au_label1;
+@property(nonatomic,strong)User *au_user;
 
 @end
 
@@ -25,35 +28,36 @@
     [super viewDidLoad];
        
     NSLog(@"viewDidLoad");
-    UILabel *label = [[UILabel alloc]init];
-    label.textColor = [UIColor blackColor];
-    [self.view addSubview:label];
-    label.frame = CGRectMake(100, 100, 100, 30);
+    self.au_label.textColor = [UIColor blackColor];
+    [self.view addSubview:self.au_label];
+    self.au_label.frame = CGRectMake(100, 100, 100, 30);
 
     
-    UILabel *label1 = [[UILabel alloc]init];
-    label1.textColor = [UIColor blackColor];
-    [self.view addSubview:label1];
-    label1.frame = CGRectMake(100, 200, 100, 30);
+    self.au_label1.textColor = [UIColor blackColor];
+    [self.view addSubview:self.au_label1];
+    self.au_label1.frame = CGRectMake(100, 200, 100, 30);
 
-    User *ue = [[User alloc]init];
-//    ue.sub.name.w_text(label);
-//    ue.sub.name.w_text(label1);
-//    ue.color.w_backgroundColor(label);
-    [ue.sub.name addTarget:label action:@selector(setText:)];
-    [ue.color addTarget:self action:@selector(change:)];
+    
+    
+    
+    [self.au_user.sub.name addTarget:self.au_label action:@selector(setText:)];
+    [self.au_user.sub.age addTarget:self.au_label1 action:@selector(setText:)];
+    [self.au_user.color addTarget:self action:@selector(change:)];
 
-    ue.sub.name = @"sdfsd1231";
-    ue.color = [UIColor redColor];
+    self.au_user.sub.name = @"sdfsd1231";
+    self.au_user.sub.age = @"ageddddd";
+    self.au_user.color = [UIColor redColor];
     
     TextView *t = [[TextView alloc]init];
     [self.view addSubview:t];
     t.frame = CGRectMake(100, 300, 100, 50);
     t.backgroundColor = [UIColor redColor];
-
+    
+   
 }
 - (void)change:(UIColor *)value{
     NSLog(@"%@",value);
+    self.au_label.textColor = value;
     
 }
 @end
