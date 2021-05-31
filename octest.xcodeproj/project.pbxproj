@@ -3,12 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		065C0D291B0B921830F56ABA /* libPods-octest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46E663F1542E3B6EF13EC0A3 /* libPods-octest.a */; };
+		1801501C2660A025003E9A16 /* Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1801501B2660A025003E9A16 /* Tool.m */; };
+		1801501F2660A03D003E9A16 /* Table.m in Sources */ = {isa = PBXBuildFile; fileRef = 1801501E2660A03D003E9A16 /* Table.m */; };
+		180150222660A058003E9A16 /* Collection.m in Sources */ = {isa = PBXBuildFile; fileRef = 180150212660A058003E9A16 /* Collection.m */; };
+		1801503E2660A0A0003E9A16 /* Router.m in Sources */ = {isa = PBXBuildFile; fileRef = 1801503D2660A0A0003E9A16 /* Router.m */; };
+		180150412660C294003E9A16 /* Bird.m in Sources */ = {isa = PBXBuildFile; fileRef = 180150402660C294003E9A16 /* Bird.m */; };
+		181BC415265F30A8001F6D8D /* Wue.m in Sources */ = {isa = PBXBuildFile; fileRef = 181BC414265F30A8001F6D8D /* Wue.m */; };
+		181BC421265F418C001F6D8D /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 181BC420265F418C001F6D8D /* User.m */; };
+		181BC44A265F7D78001F6D8D /* Sub.m in Sources */ = {isa = PBXBuildFile; fileRef = 181BC449265F7D78001F6D8D /* Sub.m */; };
+		181D9A29265DE93D0074EB74 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 181D9A28265DE93D0074EB74 /* Dog.m */; };
+		181D9A2F265DEADD0074EB74 /* MainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 181D9A2E265DEADD0074EB74 /* MainVC.m */; };
+		181D9A38265E37860074EB74 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181D9A37265E37860074EB74 /* Home.swift */; };
+		18EDEFF4263808BE001B1EDC /* Pinyinok.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18EDEFED26380789001B1EDC /* Pinyinok.ttf */; };
 		18F0130426203B9D001C33ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F0130326203B9D001C33ED /* AppDelegate.m */; };
-		18F0130726203B9D001C33ED /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F0130626203B9D001C33ED /* SceneDelegate.m */; };
 		18F0130A26203B9D001C33ED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F0130926203B9D001C33ED /* ViewController.m */; };
 		18F0130D26203B9D001C33ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F0130B26203B9D001C33ED /* Main.storyboard */; };
 		18F0130F26203B9E001C33ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18F0130E26203B9E001C33ED /* Assets.xcassets */; };
@@ -16,6 +28,15 @@
 		18F0131526203B9E001C33ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F0131426203B9E001C33ED /* main.m */; };
 		18F0131F26203B9E001C33ED /* octestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F0131E26203B9E001C33ED /* octestTests.m */; };
 		18F0132A26203B9F001C33ED /* octestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F0132926203B9F001C33ED /* octestUITests.m */; };
+		18F0133C26203BB1001C33ED /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F0133B26203BB1001C33ED /* Test.m */; };
+		18F0134226203BBB001C33ED /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F0134126203BBB001C33ED /* Cat.m */; };
+		18F6756A2664851400FB75C2 /* TextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F675692664851400FB75C2 /* TextView.m */; };
+		18F675722664948300FB75C2 /* AutoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F675712664948300FB75C2 /* AutoView.m */; };
+		18F675752664949500FB75C2 /* AutoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F675742664949500FB75C2 /* AutoViewController.m */; };
+		18F6757B2664A28B00FB75C2 /* NSObject+Auto.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F6757A2664A28B00FB75C2 /* NSObject+Auto.m */; };
+		18F6757E2664AB6600FB75C2 /* AutoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F6757D2664AB6600FB75C2 /* AutoTableViewCell.m */; };
+		18F675812664AB7E00FB75C2 /* AutoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F675802664AB7E00FB75C2 /* AutoCollectionViewCell.m */; };
+		18F675852664AE1E00FB75C2 /* LocalData.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F675842664AE1E00FB75C2 /* LocalData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +57,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F622751813BAA99F48B29DD /* Pods-octest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-octest.release.xcconfig"; path = "Target Support Files/Pods-octest/Pods-octest.release.xcconfig"; sourceTree = "<group>"; };
+		1801501A2660A025003E9A16 /* Tool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tool.h; sourceTree = "<group>"; };
+		1801501B2660A025003E9A16 /* Tool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tool.m; sourceTree = "<group>"; };
+		1801501D2660A03D003E9A16 /* Table.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Table.h; sourceTree = "<group>"; };
+		1801501E2660A03D003E9A16 /* Table.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Table.m; sourceTree = "<group>"; };
+		180150202660A058003E9A16 /* Collection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Collection.h; sourceTree = "<group>"; };
+		180150212660A058003E9A16 /* Collection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Collection.m; sourceTree = "<group>"; };
+		1801503C2660A0A0003E9A16 /* Router.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Router.h; sourceTree = "<group>"; };
+		1801503D2660A0A0003E9A16 /* Router.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Router.m; sourceTree = "<group>"; };
+		1801503F2660C294003E9A16 /* Bird.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bird.h; sourceTree = "<group>"; };
+		180150402660C294003E9A16 /* Bird.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bird.m; sourceTree = "<group>"; };
+		181BC413265F30A8001F6D8D /* Wue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Wue.h; sourceTree = "<group>"; };
+		181BC414265F30A8001F6D8D /* Wue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Wue.m; sourceTree = "<group>"; };
+		181BC41F265F418C001F6D8D /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		181BC420265F418C001F6D8D /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		181BC448265F7D78001F6D8D /* Sub.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sub.h; sourceTree = "<group>"; };
+		181BC449265F7D78001F6D8D /* Sub.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sub.m; sourceTree = "<group>"; };
+		181D9A27265DE93D0074EB74 /* Dog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		181D9A28265DE93D0074EB74 /* Dog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
+		181D9A2D265DEADD0074EB74 /* MainVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainVC.h; sourceTree = "<group>"; };
+		181D9A2E265DEADD0074EB74 /* MainVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainVC.m; sourceTree = "<group>"; };
+		181D9A36265E37850074EB74 /* octest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "octest-Bridging-Header.h"; sourceTree = "<group>"; };
+		181D9A37265E37860074EB74 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		18EDEFED26380789001B1EDC /* Pinyinok.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pinyinok.ttf; sourceTree = "<group>"; };
 		18F012FF26203B9D001C33ED /* octest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = octest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F0130226203B9D001C33ED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18F0130326203B9D001C33ED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		18F0130526203B9D001C33ED /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		18F0130626203B9D001C33ED /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		18F0130826203B9D001C33ED /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		18F0130926203B9D001C33ED /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		18F0130C26203B9D001C33ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,6 +97,26 @@
 		18F0132526203B9F001C33ED /* octestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = octestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F0132926203B9F001C33ED /* octestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = octestUITests.m; sourceTree = "<group>"; };
 		18F0132B26203B9F001C33ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18F0133A26203BB1001C33ED /* Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
+		18F0133B26203BB1001C33ED /* Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
+		18F0134026203BBB001C33ED /* Cat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cat.h; sourceTree = "<group>"; };
+		18F0134126203BBB001C33ED /* Cat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cat.m; sourceTree = "<group>"; };
+		18F675682664851400FB75C2 /* TextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextView.h; sourceTree = "<group>"; };
+		18F675692664851400FB75C2 /* TextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextView.m; sourceTree = "<group>"; };
+		18F675702664948300FB75C2 /* AutoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoView.h; sourceTree = "<group>"; };
+		18F675712664948300FB75C2 /* AutoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoView.m; sourceTree = "<group>"; };
+		18F675732664949500FB75C2 /* AutoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoViewController.h; sourceTree = "<group>"; };
+		18F675742664949500FB75C2 /* AutoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoViewController.m; sourceTree = "<group>"; };
+		18F675792664A28B00FB75C2 /* NSObject+Auto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Auto.h"; sourceTree = "<group>"; };
+		18F6757A2664A28B00FB75C2 /* NSObject+Auto.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Auto.m"; sourceTree = "<group>"; };
+		18F6757C2664AB6600FB75C2 /* AutoTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoTableViewCell.h; sourceTree = "<group>"; };
+		18F6757D2664AB6600FB75C2 /* AutoTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoTableViewCell.m; sourceTree = "<group>"; };
+		18F6757F2664AB7E00FB75C2 /* AutoCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoCollectionViewCell.h; sourceTree = "<group>"; };
+		18F675802664AB7E00FB75C2 /* AutoCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoCollectionViewCell.m; sourceTree = "<group>"; };
+		18F675832664AE1E00FB75C2 /* LocalData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalData.h; sourceTree = "<group>"; };
+		18F675842664AE1E00FB75C2 /* LocalData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalData.m; sourceTree = "<group>"; };
+		46E663F1542E3B6EF13EC0A3 /* libPods-octest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-octest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9621B8B0EED4FE0FF9C1B833 /* Pods-octest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-octest.debug.xcconfig"; path = "Target Support Files/Pods-octest/Pods-octest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				065C0D291B0B921830F56ABA /* libPods-octest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +145,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16360D2DEEC701EE4832621D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46E663F1542E3B6EF13EC0A3 /* libPods-octest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1801501126609FA0003E9A16 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				18F675822664ADFF00FB75C2 /* localData */,
+				1801503B2660A08F003E9A16 /* router */,
+				180150192660A013003E9A16 /* collection */,
+				180150182660A004003E9A16 /* table */,
+				1801501726609FF3003E9A16 /* tool */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		1801501726609FF3003E9A16 /* tool */ = {
+			isa = PBXGroup;
+			children = (
+				1801501A2660A025003E9A16 /* Tool.h */,
+				1801501B2660A025003E9A16 /* Tool.m */,
+			);
+			path = tool;
+			sourceTree = "<group>";
+		};
+		180150182660A004003E9A16 /* table */ = {
+			isa = PBXGroup;
+			children = (
+				1801501D2660A03D003E9A16 /* Table.h */,
+				1801501E2660A03D003E9A16 /* Table.m */,
+			);
+			path = table;
+			sourceTree = "<group>";
+		};
+		180150192660A013003E9A16 /* collection */ = {
+			isa = PBXGroup;
+			children = (
+				180150202660A058003E9A16 /* Collection.h */,
+				180150212660A058003E9A16 /* Collection.m */,
+			);
+			path = collection;
+			sourceTree = "<group>";
+		};
+		1801503B2660A08F003E9A16 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				1801503C2660A0A0003E9A16 /* Router.h */,
+				1801503D2660A0A0003E9A16 /* Router.m */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		181BC43E265F7AC6001F6D8D /* Wue */ = {
+			isa = PBXGroup;
+			children = (
+				181BC413265F30A8001F6D8D /* Wue.h */,
+				181BC414265F30A8001F6D8D /* Wue.m */,
+			);
+			path = Wue;
+			sourceTree = "<group>";
+		};
 		18F012F626203B9D001C33ED = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +217,8 @@
 				18F0131D26203B9E001C33ED /* octestTests */,
 				18F0132826203B9F001C33ED /* octestUITests */,
 				18F0130026203B9D001C33ED /* Products */,
+				704004C88FB9AC6D7C36BE6E /* Pods */,
+				16360D2DEEC701EE4832621D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,17 +235,37 @@
 		18F0130126203B9D001C33ED /* octest */ = {
 			isa = PBXGroup;
 			children = (
+				18EDEFED26380789001B1EDC /* Pinyinok.ttf */,
 				18F0130226203B9D001C33ED /* AppDelegate.h */,
 				18F0130326203B9D001C33ED /* AppDelegate.m */,
-				18F0130526203B9D001C33ED /* SceneDelegate.h */,
-				18F0130626203B9D001C33ED /* SceneDelegate.m */,
 				18F0130826203B9D001C33ED /* ViewController.h */,
 				18F0130926203B9D001C33ED /* ViewController.m */,
+				181D9A2D265DEADD0074EB74 /* MainVC.h */,
+				181D9A2E265DEADD0074EB74 /* MainVC.m */,
+				18F675682664851400FB75C2 /* TextView.h */,
+				18F675692664851400FB75C2 /* TextView.m */,
+				1801503F2660C294003E9A16 /* Bird.h */,
+				180150402660C294003E9A16 /* Bird.m */,
+				18F0133A26203BB1001C33ED /* Test.h */,
+				18F0133B26203BB1001C33ED /* Test.m */,
+				18F0134026203BBB001C33ED /* Cat.h */,
+				18F0134126203BBB001C33ED /* Cat.m */,
+				181D9A27265DE93D0074EB74 /* Dog.h */,
+				181D9A28265DE93D0074EB74 /* Dog.m */,
+				181BC41F265F418C001F6D8D /* User.h */,
+				181BC420265F418C001F6D8D /* User.m */,
+				181BC448265F7D78001F6D8D /* Sub.h */,
+				181BC449265F7D78001F6D8D /* Sub.m */,
+				181BC43E265F7AC6001F6D8D /* Wue */,
+				18F6756F2664941B00FB75C2 /* auto */,
+				1801501126609FA0003E9A16 /* base */,
+				181D9A37265E37860074EB74 /* Home.swift */,
 				18F0130B26203B9D001C33ED /* Main.storyboard */,
 				18F0130E26203B9E001C33ED /* Assets.xcassets */,
 				18F0131026203B9E001C33ED /* LaunchScreen.storyboard */,
 				18F0131326203B9E001C33ED /* Info.plist */,
 				18F0131426203B9E001C33ED /* main.m */,
+				181D9A36265E37850074EB74 /* octest-Bridging-Header.h */,
 			);
 			path = octest;
 			sourceTree = "<group>";
@@ -137,6 +288,41 @@
 			path = octestUITests;
 			sourceTree = "<group>";
 		};
+		18F6756F2664941B00FB75C2 /* auto */ = {
+			isa = PBXGroup;
+			children = (
+				18F675792664A28B00FB75C2 /* NSObject+Auto.h */,
+				18F6757A2664A28B00FB75C2 /* NSObject+Auto.m */,
+				18F675702664948300FB75C2 /* AutoView.h */,
+				18F675712664948300FB75C2 /* AutoView.m */,
+				18F675732664949500FB75C2 /* AutoViewController.h */,
+				18F675742664949500FB75C2 /* AutoViewController.m */,
+				18F6757C2664AB6600FB75C2 /* AutoTableViewCell.h */,
+				18F6757D2664AB6600FB75C2 /* AutoTableViewCell.m */,
+				18F6757F2664AB7E00FB75C2 /* AutoCollectionViewCell.h */,
+				18F675802664AB7E00FB75C2 /* AutoCollectionViewCell.m */,
+			);
+			path = auto;
+			sourceTree = "<group>";
+		};
+		18F675822664ADFF00FB75C2 /* localData */ = {
+			isa = PBXGroup;
+			children = (
+				18F675832664AE1E00FB75C2 /* LocalData.h */,
+				18F675842664AE1E00FB75C2 /* LocalData.m */,
+			);
+			path = localData;
+			sourceTree = "<group>";
+		};
+		704004C88FB9AC6D7C36BE6E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9621B8B0EED4FE0FF9C1B833 /* Pods-octest.debug.xcconfig */,
+				0F622751813BAA99F48B29DD /* Pods-octest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +330,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18F0132E26203B9F001C33ED /* Build configuration list for PBXNativeTarget "octest" */;
 			buildPhases = (
+				9986000649A5C90D1529A0FE /* [CP] Check Pods Manifest.lock */,
 				18F012FB26203B9D001C33ED /* Sources */,
 				18F012FC26203B9D001C33ED /* Frameworks */,
 				18F012FD26203B9D001C33ED /* Resources */,
+				6E7358A81CB023932946BDC9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -203,6 +391,7 @@
 				TargetAttributes = {
 					18F012FE26203B9D001C33ED = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					18F0131926203B9E001C33ED = {
 						CreatedOnToolsVersion = 12.4;
@@ -239,6 +428,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18EDEFF4263808BE001B1EDC /* Pinyinok.ttf in Resources */,
 				18F0131226203B9E001C33ED /* LaunchScreen.storyboard in Resources */,
 				18F0130F26203B9E001C33ED /* Assets.xcassets in Resources */,
 				18F0130D26203B9D001C33ED /* Main.storyboard in Resources */,
@@ -261,15 +451,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6E7358A81CB023932946BDC9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-octest/Pods-octest-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-octest/Pods-octest-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-octest/Pods-octest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9986000649A5C90D1529A0FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-octest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		18F012FB26203B9D001C33ED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1801501C2660A025003E9A16 /* Tool.m in Sources */,
+				18F0134226203BBB001C33ED /* Cat.m in Sources */,
+				181D9A2F265DEADD0074EB74 /* MainVC.m in Sources */,
+				18F675752664949500FB75C2 /* AutoViewController.m in Sources */,
+				18F0133C26203BB1001C33ED /* Test.m in Sources */,
+				181BC415265F30A8001F6D8D /* Wue.m in Sources */,
+				18F675852664AE1E00FB75C2 /* LocalData.m in Sources */,
 				18F0130A26203B9D001C33ED /* ViewController.m in Sources */,
+				181BC44A265F7D78001F6D8D /* Sub.m in Sources */,
 				18F0130426203B9D001C33ED /* AppDelegate.m in Sources */,
+				180150222660A058003E9A16 /* Collection.m in Sources */,
+				18F6756A2664851400FB75C2 /* TextView.m in Sources */,
+				181BC421265F418C001F6D8D /* User.m in Sources */,
+				1801501F2660A03D003E9A16 /* Table.m in Sources */,
+				18F675722664948300FB75C2 /* AutoView.m in Sources */,
+				18F6757B2664A28B00FB75C2 /* NSObject+Auto.m in Sources */,
+				18F675812664AB7E00FB75C2 /* AutoCollectionViewCell.m in Sources */,
+				18F6757E2664AB6600FB75C2 /* AutoTableViewCell.m in Sources */,
+				181D9A29265DE93D0074EB74 /* Dog.m in Sources */,
+				180150412660C294003E9A16 /* Bird.m in Sources */,
+				181D9A38265E37860074EB74 /* Home.swift in Sources */,
+				1801503E2660A0A0003E9A16 /* Router.m in Sources */,
 				18F0131526203B9E001C33ED /* main.m in Sources */,
-				18F0130726203B9D001C33ED /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,36 +689,47 @@
 		};
 		18F0132F26203B9F001C33ED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9621B8B0EED4FE0FF9C1B833 /* Pods-octest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TLDY8R3P8K;
 				INFOPLIST_FILE = octest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.octest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "octest/octest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		18F0133026203B9F001C33ED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F622751813BAA99F48B29DD /* Pods-octest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TLDY8R3P8K;
 				INFOPLIST_FILE = octest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.octest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "octest/octest-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -475,6 +737,7 @@
 		18F0133226203B9F001C33ED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TLDY8R3P8K;
@@ -495,6 +758,7 @@
 		18F0133326203B9F001C33ED /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TLDY8R3P8K;
@@ -515,6 +779,7 @@
 		18F0133526203B9F001C33ED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TLDY8R3P8K;
 				INFOPLIST_FILE = octestUITests/Info.plist;
@@ -533,6 +798,7 @@
 		18F0133626203B9F001C33ED /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TLDY8R3P8K;
 				INFOPLIST_FILE = octestUITests/Info.plist;
