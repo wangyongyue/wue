@@ -1,16 +1,15 @@
 //
-//  LocalData.h
+//  TableView.h
 //  octest
 //
 //  Created by apple on 2021/5/31.
 //
 
-#import <Foundation/Foundation.h>
+#import "Table.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LocalData : NSObject
-+ (instancetype)shared;
+@interface TableView : Table
 
 @end
 

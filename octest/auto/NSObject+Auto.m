@@ -7,9 +7,19 @@
 
 #import "NSObject+Auto.h"
 #import <objc/runtime.h>
+const NSString *propertyTypeKey = @"propertyTypeKey";
+@interface NSObject ()
+@property(nonatomic,strong)NSDictionary *propertyTypeDic;
+
+@end
 
 @implementation NSObject (Auto)
-
+- (void)setPropertyTypeDic:(NSDictionary *)propertyTypeDic{
+    objc_setAssociatedObject(self, &propertyTypeKey, propertyTypeDic, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+- (NSDictionary *)propertyTypeDic{
+    return objc_getAssociatedObject(self, &propertyTypeKey);
+}
 + (void)addMethodWithIdentifier:(NSString *)identifier sel:(SEL)sel setSelector:(SEL)setSelector getSelector:(SEL)getSelector{
     NSString *selString = NSStringFromSelector(sel);
     if ([selString hasPrefix:[NSString stringWithFormat:@"set%@",identifier]]) {
@@ -64,36 +74,51 @@
 }
 
 - (NSDictionary *)propertyTypeWithKeyAndValue{
-    
+    if (self.propertyTypeDic) {
+        return self.propertyTypeDic;
+    }
     NSMutableDictionary *dic = [NSMutableDictionary dictionary];
-    unsigned int count;
-    objc_property_t *propertyList = class_copyPropertyList([self class], &count);
-    for (unsigned int i = 0; i < count; i++) {
-        const char *propertyName = property_getName(propertyList[i]);
-        const char *propertyType = property_getAttributes(propertyList[i]);
+    Class suClass;
+    suClass = [self class];
+    
+    while (suClass) {
+        unsigned int count;
+        objc_property_t *propertyList = class_copyPropertyList(suClass, &count);
+        
+        
+        for (unsigned int i = 0; i < count; i++) {
+            const char *propertyName = property_getName(propertyList[i]);
+            const char *propertyType = property_getAttributes(propertyList[i]);
 
-        NSString *key = [NSString stringWithUTF8String:propertyName];
-        NSString *type = [NSString stringWithUTF8String:propertyType];
+            NSString *key = [NSString stringWithUTF8String:propertyName];
+            NSString *type = [NSString stringWithUTF8String:propertyType];
 
-        if (key.length > 0) {
-            NSString *hHey = [key stringByReplacingCharactersInRange:NSMakeRange(0,1) withString:[[key substringToIndex:1] capitalizedString]];
-            NSString *setKey = [NSString stringWithFormat:@"set%@:",hHey];
-            if ([type hasPrefix:@"T@"]) {
-                NSArray *strArray = [type componentsSeparatedByString:@"\""];
-                if (strArray.count >= 3) {
-                    NSString *objType = strArray[1];
-                    [dic setObject:objType forKey:setKey];
+            if (key.length > 0) {
+                NSString *hHey = [key stringByReplacingCharactersInRange:NSMakeRange(0,1) withString:[[key substringToIndex:1] capitalizedString]];
+                NSString *setKey = [NSString stringWithFormat:@"set%@:",hHey];
+                if ([type hasPrefix:@"T@"]) {
+                    NSArray *strArray = [type componentsSeparatedByString:@"\""];
+                    if (strArray.count >= 3) {
+                        NSString *objType = strArray[1];
+                        [dic setObject:objType forKey:setKey];
+                    }
                 }
             }
         }
+        free(propertyList);
+        
+        suClass = suClass.superclass;
+        
+        
     }
-    return dic
-    ;
+    self.propertyTypeDic = dic;
+    
+    return self.propertyTypeDic;
 }
 
 + (BOOL)isType:(NSString *)type key:(NSString *)key{
     
-    if ([key hasPrefix:@"au"]) {
+    if ([key hasPrefix:@"au_"]) {
         return  YES;
     }
     return NO;

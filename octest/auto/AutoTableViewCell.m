@@ -33,7 +33,7 @@
         id obj = [[NSClassFromString(classStr) alloc]init];
         [self.w_propertys setObject:obj forKey:key];
         if ([obj isKindOfClass:[UIView class]]) {
-            [self addSubview:obj];
+            [self.contentView addSubview:obj];
         }
 
         return obj;

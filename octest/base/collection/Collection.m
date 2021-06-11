@@ -25,15 +25,11 @@
     layout.minimumLineSpacing = 0;
     layout.minimumInteritemSpacing = 0;
     layout.scrollDirection = UICollectionViewScrollDirectionVertical;
-    self = [super initWithFrame:frame collectionViewLayout:layout];
-    if (self) {
-        
-    }
-    return self;
+    return [self initWithFrame:frame collectionViewLayout:layout];;
 }
 - (instancetype)initWithFrame:(CGRect)frame collectionViewLayout:(UICollectionViewLayout *)layout{
     if(self = [super initWithFrame:frame collectionViewLayout:layout]){
-        
+        self.backgroundColor = [UIColor clearColor];
         self.delegate = self;
         self.dataSource = self;
         self.backgroundColor = [UIColor clearColor];

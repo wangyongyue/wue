@@ -9,6 +9,7 @@
 #import <objc/runtime.h>
 #import <UIKit/UIKit.h>
 #import "NSObject+Auto.h"
+#import <objc/message.h>
 
 @interface Wue ()
 @property(nonatomic,strong)NSMutableDictionary *w_propertys;
@@ -63,6 +64,7 @@
              @"UIFont",
              @"NSArray",
              @"NSDictionary",
+             @"NSNumber",
     ];
 }
 + (BOOL)isType:(NSString *)type key:(NSString *)key{
