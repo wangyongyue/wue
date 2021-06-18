@@ -16,7 +16,7 @@
 @implementation AutoViewController
 
 - (id)read{
-    
+
     NSString *key =NSStringFromSelector(_cmd);
     if (key.length > 0) {
         key = [key stringByReplacingCharactersInRange:NSMakeRange(0,1) withString:[[key substringToIndex:1] capitalizedString]];

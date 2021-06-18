@@ -13,7 +13,6 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)swizzlingSettersAndGettersWithIdentifier:(NSString *)identifier;
 + (BOOL)isType:(NSString *)type key:(NSString *)key;
 + (void)addMethodWithIdentifier:(NSString *)identifier sel:(SEL)sel setSelector:(SEL)setSelector getSelector:(SEL)getSelector;
-
 - (NSDictionary *)propertyTypeWithKeyAndValue;
 
 @end

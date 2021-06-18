@@ -8,6 +8,7 @@
 #import "NSObject+Auto.h"
 #import <objc/runtime.h>
 const NSString *propertyTypeKey = @"propertyTypeKey";
+
 @interface NSObject ()
 @property(nonatomic,strong)NSDictionary *propertyTypeDic;
 
@@ -20,6 +21,7 @@ const NSString *propertyTypeKey = @"propertyTypeKey";
 - (NSDictionary *)propertyTypeDic{
     return objc_getAssociatedObject(self, &propertyTypeKey);
 }
+
 + (void)addMethodWithIdentifier:(NSString *)identifier sel:(SEL)sel setSelector:(SEL)setSelector getSelector:(SEL)getSelector{
     NSString *selString = NSStringFromSelector(sel);
     if ([selString hasPrefix:[NSString stringWithFormat:@"set%@",identifier]]) {
@@ -123,6 +125,7 @@ const NSString *propertyTypeKey = @"propertyTypeKey";
     }
     return NO;
 }
+
 
 
 @end

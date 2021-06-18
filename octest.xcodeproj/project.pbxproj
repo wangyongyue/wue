@@ -13,6 +13,7 @@
 		180150222660A058003E9A16 /* Collection.m in Sources */ = {isa = PBXBuildFile; fileRef = 180150212660A058003E9A16 /* Collection.m */; };
 		1801503E2660A0A0003E9A16 /* Router.m in Sources */ = {isa = PBXBuildFile; fileRef = 1801503D2660A0A0003E9A16 /* Router.m */; };
 		180150412660C294003E9A16 /* Bird.m in Sources */ = {isa = PBXBuildFile; fileRef = 180150402660C294003E9A16 /* Bird.m */; };
+		18184BEE267C33BE003D36D5 /* Observer.m in Sources */ = {isa = PBXBuildFile; fileRef = 18184BED267C33BE003D36D5 /* Observer.m */; };
 		181BC415265F30A8001F6D8D /* Wue.m in Sources */ = {isa = PBXBuildFile; fileRef = 181BC414265F30A8001F6D8D /* Wue.m */; };
 		181BC421265F418C001F6D8D /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 181BC420265F418C001F6D8D /* User.m */; };
 		181BC44A265F7D78001F6D8D /* Sub.m in Sources */ = {isa = PBXBuildFile; fileRef = 181BC449265F7D78001F6D8D /* Sub.m */; };
@@ -89,6 +90,8 @@
 		1801503D2660A0A0003E9A16 /* Router.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Router.m; sourceTree = "<group>"; };
 		1801503F2660C294003E9A16 /* Bird.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bird.h; sourceTree = "<group>"; };
 		180150402660C294003E9A16 /* Bird.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bird.m; sourceTree = "<group>"; };
+		18184BEC267C33BE003D36D5 /* Observer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Observer.h; sourceTree = "<group>"; };
+		18184BED267C33BE003D36D5 /* Observer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Observer.m; sourceTree = "<group>"; };
 		181BC413265F30A8001F6D8D /* Wue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Wue.h; sourceTree = "<group>"; };
 		181BC414265F30A8001F6D8D /* Wue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Wue.m; sourceTree = "<group>"; };
 		181BC41F265F418C001F6D8D /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
@@ -101,6 +104,8 @@
 		181D9A2E265DEADD0074EB74 /* MainVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainVC.m; sourceTree = "<group>"; };
 		181D9A36265E37850074EB74 /* octest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "octest-Bridging-Header.h"; sourceTree = "<group>"; };
 		181D9A37265E37860074EB74 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		18C25E0426736B5C0080F814 /* Layout.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = Layout.geojson; sourceTree = "<group>"; };
+		18C25E05267370340080F814 /* mian.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = mian.xml; sourceTree = "<group>"; };
 		18EDEFED26380789001B1EDC /* Pinyinok.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pinyinok.ttf; sourceTree = "<group>"; };
 		18F012FF26203B9D001C33ED /* octest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = octest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F0130226203B9D001C33ED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -278,6 +283,8 @@
 			children = (
 				181BC413265F30A8001F6D8D /* Wue.h */,
 				181BC414265F30A8001F6D8D /* Wue.m */,
+				18184BEC267C33BE003D36D5 /* Observer.h */,
+				18184BED267C33BE003D36D5 /* Observer.m */,
 			);
 			path = Wue;
 			sourceTree = "<group>";
@@ -326,6 +333,8 @@
 				181BC420265F418C001F6D8D /* User.m */,
 				181BC448265F7D78001F6D8D /* Sub.h */,
 				181BC449265F7D78001F6D8D /* Sub.m */,
+				18C25E0426736B5C0080F814 /* Layout.geojson */,
+				18C25E05267370340080F814 /* mian.xml */,
 				1801501126609FA0003E9A16 /* base */,
 				18F675982664C21400FB75C2 /* widget */,
 				18F675972664C1AC00FB75C2 /* style */,
@@ -799,6 +808,7 @@
 				181BC415265F30A8001F6D8D /* Wue.m in Sources */,
 				18F675852664AE1E00FB75C2 /* LocalData.m in Sources */,
 				18F675CE2664CA5F00FB75C2 /* CController.m in Sources */,
+				18184BEE267C33BE003D36D5 /* Observer.m in Sources */,
 				18F675B92664C76800FB75C2 /* AlertContent.m in Sources */,
 				18F0130A26203B9D001C33ED /* ViewController.m in Sources */,
 				18F675AE2664C53F00FB75C2 /* TableView.m in Sources */,

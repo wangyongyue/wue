@@ -20,6 +20,7 @@
 #import "Test1Data.h"
 #import <objc/runtime.h>
 #import <objc/message.h>
+#import "Observer.h"
 
 @interface MainVC ()
 @property(nonatomic,strong)UILabel *au_label;
@@ -29,6 +30,7 @@
 @property(nonatomic,strong)Collection *au_collection;
 @property(nonatomic,strong)TestData *au_test;
 @property(nonatomic,strong)Test1Data *au_test1;
+@property(nonatomic,strong)OBString *au_ob;
 
 @end
 
@@ -47,11 +49,15 @@
     //layout
     self.au_label.frame = CGRectMake(100, 100, 100, 30);
     self.au_label1.frame = CGRectMake(100, 200, 100, 30);
+    
+    
+    [self.au_ob addTarget:self.au_label action:@selector(setText:)];
+    self.au_ob.value = @"12312313123";
 
     
     
     //bind
-    [self.au_user.sub.name addTarget:self.au_label action:@selector(setText:)];
+//    [self.au_user.sub.name addTarget:self.au_label action:@selector(setText:)];
     [self.au_user.sub.age addTarget:self.au_label1 action:@selector(setText:)];
     [self.au_user.color addTarget:self action:@selector(change:)];
 
@@ -68,10 +74,10 @@
     //table
     self.au_table.frame = CGRectMake(200, 300, 200, 300);
     [self.au_test.array addTarget:self.au_table action:@selector(reloadData:)];
-    
     [self.au_test request];
     
     
+    [self.au_test.name addTarget:self action:@selector(changeString:)];
     
     //collection
     self.au_collection.frame = CGRectMake(200, 100, 250, 80);
@@ -84,7 +90,10 @@
   
 
 }
-
+- (void)changeString:(NSString *)value{
+    NSLog(@"%@",value);
+    
+}
 - (void)change:(UIColor *)value{
     NSLog(@"%@",value);
     self.au_label.textColor = value;
